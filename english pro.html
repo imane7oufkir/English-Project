@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale =1.0"> <!-- to make your website mobile friendly ! -->
+    <title>Lady's Time</title>
+
+	<!-- the folowing code is for bootstrap library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/
+	zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!-- for facebook / insta icons  -->
+	<link  rel="stylesheet" href="home.css">
+
+
+</head>
+<body>
+
+
+<!-- Navigation -->
+<nav  class="navbar navbar-expand-md navbar navbar-light bg-light sticky-top">
+<a  href="#"><img src="100.jpg" width=15% height=15%  border-radius = 30px;></a>
+<div class="container-fluid"> <!-- Le contenu de tableau de navigation  -->
+
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-traget="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="workspace.html">At Workspace</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Education.html">At School</a>
+			</li>
+
+		</ul>
+	</div>
+</nav>
+
+
+<!-- Definition of the social prob-->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">What is Gender Discrimination ??</h1>
+		<hr>
+	</div>
+<img src="p.jpg" width=100% height=600>
+	<div class="col-12">
+		<p class="lead"> Discrimination based on gender (or sex)s  an  unfavorable  treatment  to  anyone based  on  sex,  race  and  so  on.  It is  considered  as  an  obstacle  for  the  achievement  of  the objectives of equality, development and peace. </p>
+		<p class="lead">Discrimination is recognized as a form of inequality  and  issue  for  women  around  the  world.  It  affects  the  capacity  of  women  to participate   freely   and   fully   in   society   and   in   turn   brings   psychological   harmful consequences. </p>
+		<p class="lead">Half  of  the  population  of  the  world  consists  of  women,  whose  large portion is still discriminated in different phase of life directly or indirectly, though there are some differences in each country, religion, society or ethnicity. </p>
+
+
+
+	</div>
+</div>
+</div>
+
+<div style="text-align:center">
+
+
+
+  <video id="video1" width="700">
+    <source src="vid1.mp4" type="video/mp4" >
+
+  </video>
+<br><br>
+<button onclick="playPause()"type="button" class="btn btn-outline-dark">Play/Pause</button>
+</div>
+
+<script>
+var myVideo = document.getElementById("video1");
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
+
+</script>
+
+
+	<div class="row welcome text-center">
+
+			<h3 class="display-4"> Where and When Can Gender Discrimination Occur? </h3 class="display-4">
+
+		<hr>
+	</div>
+
+<!-- Cards-->
+<div class="container-fluid padding">
+	<div class="row padding">
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-imd-top image-resize" src="70.jpg" width=100% height=100%  ;>
+			<div class="card-body">
+				<h4 class="card-title">Employment</h4>
+				<p class="card-text">Gender discrimination in employment can include claims
+					that a potential employer asked <span id="dots">...</span><span id="more">discriminatory questions based
+					on gender during the interview process; claims that an employer
+					failed to hire, failed to promote, or wrongfully terminated an employee
+					based on his or her gender; unequal pay claims; and claims
+					for sexual harassment of employees.</span></p>
+				<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-outline-dark">Read more</button>
+				<script>
+					function myFunction() {
+  				var dots = document.getElementById("dots");
+  				var moreText = document.getElementById("more");
+				var btnText = document.getElementById("myBtn");
+
+  				if (dots.style.display === "none") {
+    				dots.style.display = "inline";
+    				btnText.innerHTML = "Read more";
+    				moreText.style.display = "none";
+  				} else {
+				dots.style.display = "none";
+    			btnText.innerHTML = "Read less";
+    			moreText.style.display = "inline";
+  				}
+				}
+				</script>
+
+			</div>
+		</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+			<img class="card-imd-top image-resize" src="9.jpg" width=100% height=265>
+
+			<div class="card-body">
+				<h4 class="card-title">Education</h4>
+				<p class="card-text">Gender discrimination in education can include claims for exclusion from educational programs or opportunities based on gender and claims for sexual harassment of students.</p>
+
+			</div>
+		</div>
+	</div>
+		<div class="col-md-4">
+			<div class="card">
+			<img class="card-imd-top image-resize" src="88.png" width=100% height=265>
+			<div class="card-body">
+				<h4 class="card-title">Lending / Credit </h4>
+				<p class="card-text">Gender discrimination in lending/ credit can include claims for refusal to extend credit<span id="ima">...</span><span id="lop">
+					claims for imposition of unequal loan terms; and claims arising from improper inquiries during the credit/loan approval
+					process, based on the gender of the applicant.</span></p>
+
+			<button onclick="Fct()" id="fi" type="button" class="btn btn-outline-dark">Read more</button>
+				<script>
+					function Fct() {
+  				var dots = document.getElementById("ima");
+  				var moreText = document.getElementById("lop");
+				var btnText = document.getElementById("fi");
+
+  				if (dots.style.display === "none") {
+    				dots.style.display = "inline";
+    				btnText.innerHTML = "Read more";
+    				moreText.style.display = "none";
+  				} else {
+				dots.style.display = "none";
+    			btnText.innerHTML = "Read less";
+    			moreText.style.display = "inline";
+  				}
+				}
+				</script>
+
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="row welcome text-center">
+
+			<h1> How can I call out gender discrimination when I see it?</h1>
+
+		<hr>
+	</div>
+
+<div class="container-fluid padding">
+<div class="row welcome text-left">
+
+	<ul>
+		<li><mark>Speak out about your own experiences :</mark> It’s important, if you feel comfortable, to call out your own experiences of discrimination. This could be highlighting sexist remarks made by your friends or peers or reporting harassment on public transport.
+ </li>
+		<p>        </p>
+		<p>It’s important to note that there are dangers associated with calling others out on their behaviour. People may not like to have their viewpoints challenged; they may react in a negative or aggressive way, so if your instincts tells you that a situation is too risky, your own safety is the priority. </p>
+		<p>        </p>
+		<p>Often the best course of action when discrimination is experienced is to alert an authority member of staff on public transport, or where relevant your teacher or your boss. The more they are made aware these issues are happening, the more they’ll be encouraged to step in and be part of the solution. </p>
+
+		<p>                                                              </p>
+
+		<li><mark> Support other campaigners :</mark> A great way to make a big effect in the pursuit of gender equality is to join with others. Seek out local campaign groups. Join or set up school or university societies for gender equality and female leadership. There is strength in numbers - more voices tackling a particular issue means they are more likely to be heard. </li>
+		<p>        </p>
+		<p>Helping to raise the profile of campaigns by other marginalised groups is a vital part of ending discrimination. For example, girls from a minority or indigenous community may experience racism as well as sexism. Be their allies and lend your voice to their causes.
+         </p>
+		<p>        </p>
+
+		<li><mark>Call out discrimination in the media and advertising :</mark> Write to advertisers, marketers and media outlets if you come across stories that portray women and girls in a reductive or unfair way.  </li>
+		<p> Find out who is responsible and write to them to let them know your thoughts.        </p>
+		<p> Also vote with your feet. Don’t support entertainment that is disrespectful to girls and women and doesn’t represent their true power, potential, talent and diversity.</p>
+		<p>        </p>
+
+</div>
+	</div>
+</div>
+<!-- Footer-->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+
+			<div class="col-12">
+				<footer class="blockquote-footer">Made by Imane Oufkir </footer>
+				<hr>
+				<h5>&copy; Lady's time.com </h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>
